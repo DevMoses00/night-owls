@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://cc1b1aerkxe5k"]
+
+[ext_resource type="Texture2D" uid="uid://bvnox6olaiu47" path="res://art/panels/panel_main_view/panel/frame_01.png" id="1_ysj14"]
+[ext_resource type="Texture2D" uid="uid://bdtoaeuyylenu" path="res://art/panels/panel_main_view/panel/frame_02.png" id="2_4qsdm"]
+[ext_resource type="Texture2D" uid="uid://dinv6tc54r7rt" path="res://art/panels/panel_main_view/panel/frame_03.png" id="3_1s6pe"]
+[ext_resource type="Texture2D" uid="uid://4m6s721va1uy" path="res://art/panels/panel_main_view/panel/frame_04.png" id="4_ubsvw"]
+[ext_resource type="Script" path="res://scripts/panels.gd" id="5_2gk68"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4dsnc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ysj14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4qsdm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1s6pe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ubsvw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5udiq"]
+
+[node name="panelMain" type="AnimatedSprite2D"]
+position = Vector2(2.08165e-12, 2.08165e-12)
+sprite_frames = SubResource("SpriteFrames_4dsnc")
+autoplay = "default"
+frame_progress = 0.903015
+script = ExtResource("5_2gk68")
+off_camera_pos = Vector2(2.08165e-12, -721)
+
+[node name="frame1" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5udiq")
+
+[node name="frame2" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5udiq")
+
+[node name="frame3" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5udiq")
+
+[node name="frame4" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5udiq")

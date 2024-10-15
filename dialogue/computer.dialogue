@@ -1,0 +1,128 @@
+~ s000
+
+do wait(3.0)
+
+#do panel_pull_signaled.emit("panelTexts","frame1")
+#do panel_text_signaled.emit("CONNOR", "missing u")
+
+% Our linguistic contructs [do panel_pull_signaled.emit("panelTable","frame1")]were designed and determined by the circumstances in which a given society found themselves in. 
+% Our linguistic ability[do panel_pull_signaled.emit("panelTable","frame1")] owes its strength to an individual's desire to take part in community and share. 
+
+% Without that innate desire to connect, [do panel_pull_signaled.emit("panelComputer","frame1")]our language constructs would still be in primitive states sufficial for humanities basic needs for physical nourishment and protection. 
+% Whether in safety or in danger, [do panel_pull_signaled.emit("panelComputer","frame1")]the needs of an individual - and by extension their population - were attended to by forming verbal shorthands for the combinations of physical gestures we used to communicate with prior. 
+
+This essay defines the fundamental components for a shared language by examining and excluding[do panel_pull_signaled.emit("panelEyesWin","concentrated")] language characteristics unnecessary to maintain a universal communication vehicle. 
+
+do panel_push_signaled.emit("panelTable")
+do panel_push_signaled.emit("panelStranger")
+do wait(2.0)
+
+do panel_pull_signaled.emit("panelInternal", "frame1")
+do wait(2.0)
+do internal_text_signaled.emit("Hmph. This makes sense, right?")
+do wait(2.0)
+- It sure does.
+	do internal_text_signaled.emit("Yeah... this is good. It's fine.")
+	do wait(2.0)
+	do panel_pull_signaled.emit("panelEyesWin","frame2")
+	do internal_text_signaled.emit("I'm an impressive student, I think.")
+	do wait(2.0)
+	=> s002
+- It sounds intelligent enough.
+	do internal_text_signaled.emit("This sounds real smart.")
+	do wait(2.0)
+	do panel_pull_signaled.emit("panelEyesWin","frame3")
+	do internal_text_signaled.emit("I just have to keep it up for another 2,000 words.")
+	do wait(2.0)
+	=> s002
+- This entire assignment blows.
+	do internal_text_signaled.emit("This essay is going to ruin my entire weekend.")
+	do wait(2.5)
+	do panel_pull_signaled.emit("panelEyesWin","frame4")
+	do internal_text_signaled.emit("All my social plans with my thousands of friends.")
+	do wait(3.0)
+	do internal_text_signaled.emit("My fan club will be so dissapointed.")
+	do wait(2.0)
+	=> s002
+=> END
+
+~ s002
+do internal_text_signaled.emit("Ugh.")
+do wait(1.5)
+do panel_push_signaled.emit("panelComputer")
+do internal_text_signaled.emit("What time is it?")
+do wait(2.0)
+do panel_pull_signaled.emit("panelClock", "frame1")
+do wait(2.0)
+do panel_pull_signaled.emit("panelEyesWin","frame5")
+do internal_text_signaled.emit("Anthropology is so stupid.")
+wuthkwshgflshdgvj
+do panel_push_signaled.emit("panelClock")
+do panel_push_signaled.emit("panelInternal")
+do panel_pull_signaled.emit("panelTable", "frame1")
+do wait(1.5)
+do panel_pull_signaled.emit("panelTexts", "frame1")
+do panel_text_signaled.emit("CONNOR", "missing u. U doing ok?")
+do wait(2.0)
+- i'm doing ok. How r u?
+	do panel_text_signaled.emit("SERENITY", "i'm doing ok. how r u")
+	do wait(4.5)
+	do panel_text_signaled.emit("CONNOR", "Doing ok. Just checking on u.")
+	do wait(3.5)
+	do panel_text_signaled.emit("SERENITY", "the sweetest ^^")
+	do wait(3.0)
+	=> s004
+- u sensed my struggle.
+	do panel_text_signaled.emit("SERENITY", "u sensed my struggle.")
+	do wait(2.5)
+	do panel_text_signaled.emit("SERENITY", "head is spinning with this essay.")
+	do wait(2.5)
+	do panel_text_signaled.emit("SERENITY", "y did i do this?")
+	do wait(4.5)
+	do panel_text_signaled.emit("CONNOR", "BC ur the smartest around.")
+	do wait(2.5)
+	do panel_text_signaled.emit("SERENITY", "u think u can get lucky with that sweet talk.")
+	do wait(3.0)
+	do panel_text_signaled.emit("SERENITY", "U'd be right ;p.")
+	do wait(3.0)
+	=> s004
+- missing u more.
+	do panel_text_signaled.emit("SERENITY", "missing u more. wish i wasn't stuck with this essay.")
+	do wait(4.5)
+	do panel_text_signaled.emit("CONNOR", "I know, ur hard work will pay off.")
+	do wait(3.5)
+	do panel_text_signaled.emit("SERENITY", "if u say so ;p")
+	do wait(3.0)
+
+~ s004
+do panel_push_signaled.emit("panelTexts")
+do panel_push_signaled.emit("panelTable")
+do panel_pull_signaled.emit("panelComputer", "frame2")
+do wait(2.0)
+do panel_pull_signaled.emit("panelStranger", "frame1")
+do wait(1.0)
+Hoot83: Friday evening plans?
+do panel_push_signaled.emit("panelStranger")
+do panel_pull_signaled.emit("panelEyesWin", "frame3")
+do wait(2.0)
+do panel_pull_signaled.emit("panelInternal", "frame1")
+do internal_text_signaled.emit("Hmph, not tonight, buddy.")
+do wait(3.0)
+do panel_push_signaled.emit("panelInternal")
+do panel_pull_signaled.emit("panelEyesWin", "frame3")
+do panel_text_signaled.emit("SERENITY", "stop by later?")
+do panel_pull_signaled.emit("panelTexts", "frame1")
+do wait(4.5)
+do panel_text_signaled.emit("CONNOR", "Not tonight, srry.")
+do wait(2.5)
+do panel_pull_signaled.emit("panelEyesWin", "frame3")
+do panel_pull_signaled.emit("panelInternal", "frame1")
+do internal_text_signaled.emit("You're kidding me.")
+do wait(3.0)
+do panel_text_signaled.emit("SERENITY", "but yyyyyy not?")
+do wait(4.5)
+do panel_text_signaled.emit("CONNOR", "It's bid nite. Gotta b there for the newbies.")
+do panel_pull_signaled.emit("panelTable", "frame1")
+- is merson going to be there?
+- i haven't seen u at all today.
+- big party?
