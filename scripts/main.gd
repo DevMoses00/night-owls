@@ -25,7 +25,7 @@ func _ready():
 func pull_panel(panelnm, framenm):
 	panelnm = get_node(panelnm)
 	framenm = panelnm.get_node(framenm)
-	#framenm.show()
+	framenm.show()
 	# need to select the right frame according to framenm, and have that be visible and play.
 	var panelTween = get_tree().create_tween()
 	panelTween.tween_property(panelnm, "position", Vector2(0,0), time).set_ease(Tween.EASE_IN_OUT)

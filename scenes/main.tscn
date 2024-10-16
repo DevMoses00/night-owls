@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=3 uid="uid://bwl8bs68b1icd"]
+[gd_scene load_steps=92 format=3 uid="uid://bwl8bs68b1icd"]
 
 [ext_resource type="Texture2D" uid="uid://deg3ic8wp0g2k" path="res://art/background/frame_01.png" id="1_b6w0k"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_lg7iv"]
@@ -135,6 +135,14 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7vl7t"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_wtl2b"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yn2rw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4brk4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nac8p"]
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_nra7u"]
 animations = [{
 "frames": [{
@@ -157,6 +165,18 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_a8006"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_3r0s2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xddvq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_61fix"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eaeuq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v1agy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_61pk5"]
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_2j0rf"]
 animations = [{
 "frames": [{
@@ -178,6 +198,8 @@ animations = [{
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_07ivx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8khia"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2r0kp"]
 animations = [{
@@ -212,6 +234,28 @@ animations = [{
 "name": &"default",
 "speed": 10.0
 }]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uabsu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3gpr4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uh2au"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_elhxh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n8trg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wrrwf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q8uap"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t8bwg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6nuus"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lytd2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bp1ue"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cqasx"]
 animations = [{
@@ -288,7 +332,7 @@ base_font = ExtResource("45_w4jxd")
 [node name="Main" type="Node2D"]
 script = ExtResource("1_lg7iv")
 resource = ExtResource("2_5nd4n")
-title = "~ s000"
+title = "~ s013"
 
 [node name="Background" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_kmyi1")
@@ -334,8 +378,25 @@ autoplay = "default"
 script = ExtResource("11_kv3pd")
 off_camera_pos = Vector2(-721, 2.08165e-12)
 
-[node name="frame1" type="AnimatedSprite2D" parent="panelTable"]
+[node name="type_phone_off" type="AnimatedSprite2D" parent="panelTable"]
+visible = false
 sprite_frames = SubResource("SpriteFrames_7vl7t")
+
+[node name="stop_phone_alert" type="AnimatedSprite2D" parent="panelTable"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_wtl2b")
+
+[node name="text_active" type="AnimatedSprite2D" parent="panelTable"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_yn2rw")
+
+[node name="text_inactive" type="AnimatedSprite2D" parent="panelTable"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_4brk4")
+
+[node name="stop_phone_off" type="AnimatedSprite2D" parent="panelTable"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_nac8p")
 
 [node name="panelClock" type="AnimatedSprite2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
@@ -344,8 +405,33 @@ autoplay = "default"
 script = ExtResource("11_kv3pd")
 off_camera_pos = Vector2(2.08165e-12, 721)
 
-[node name="frame1" type="AnimatedSprite2D" parent="panelClock"]
+[node name="748" type="AnimatedSprite2D" parent="panelClock"]
+visible = false
 sprite_frames = SubResource("SpriteFrames_a8006")
+
+[node name="936" type="AnimatedSprite2D" parent="panelClock"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_3r0s2")
+
+[node name="1027" type="AnimatedSprite2D" parent="panelClock"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_xddvq")
+
+[node name="1154" type="AnimatedSprite2D" parent="panelClock"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_61fix")
+
+[node name="127" type="AnimatedSprite2D" parent="panelClock"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_eaeuq")
+
+[node name="221" type="AnimatedSprite2D" parent="panelClock"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_v1agy")
+
+[node name="400" type="AnimatedSprite2D" parent="panelClock"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_61pk5")
 
 [node name="panelComputer" type="AnimatedSprite2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
@@ -354,8 +440,13 @@ autoplay = "default"
 script = ExtResource("11_kv3pd")
 off_camera_pos = Vector2(721, 2.08165e-12)
 
-[node name="frame1" type="AnimatedSprite2D" parent="panelComputer"]
+[node name="essay" type="AnimatedSprite2D" parent="panelComputer"]
+visible = false
 sprite_frames = SubResource("SpriteFrames_07ivx")
+
+[node name="chat_notification" type="AnimatedSprite2D" parent="panelComputer"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_8khia")
 
 [node name="panelEyesWin" type="AnimatedSprite2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
@@ -370,6 +461,48 @@ sprite_frames = SubResource("SpriteFrames_d4y1a")
 autoplay = "default"
 frame_progress = 0.934955
 
+[node name="aha" type="AnimatedSprite2D" parent="panelEyesWin"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_uabsu")
+
+[node name="disappointed_closed" type="AnimatedSprite2D" parent="panelEyesWin"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_3gpr4")
+
+[node name="angry" type="AnimatedSprite2D" parent="panelEyesWin"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_uh2au")
+
+[node name="satisfied_down" type="AnimatedSprite2D" parent="panelEyesWin"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_elhxh")
+
+[node name="smirk_down" type="AnimatedSprite2D" parent="panelEyesWin"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_n8trg")
+
+[node name="angry_down" type="AnimatedSprite2D" parent="panelEyesWin"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_wrrwf")
+
+[node name="disappointed_down" type="AnimatedSprite2D" parent="panelEyesWin"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_q8uap")
+
+[node name="suspicious_down" type="AnimatedSprite2D" parent="panelEyesWin"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_t8bwg")
+
+[node name="tired" type="AnimatedSprite2D" parent="panelEyesWin"]
+visible = false
+sprite_frames = SubResource("SpriteFrames_6nuus")
+
+[node name="worried" type="AnimatedSprite2D" parent="panelEyesWin"]
+sprite_frames = SubResource("SpriteFrames_lytd2")
+
+[node name="freaked" type="AnimatedSprite2D" parent="panelEyesWin"]
+sprite_frames = SubResource("SpriteFrames_bp1ue")
+
 [node name="panelInternal" type="AnimatedSprite2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_cqasx")
@@ -377,7 +510,7 @@ autoplay = "default"
 script = ExtResource("11_kv3pd")
 off_camera_pos = Vector2(721, 2.08165e-12)
 
-[node name="frame1" type="AnimatedSprite2D" parent="panelInternal"]
+[node name="blank" type="AnimatedSprite2D" parent="panelInternal"]
 sprite_frames = SubResource("SpriteFrames_0i5lv")
 
 [node name="internal" type="VBoxContainer" parent="panelInternal"]
@@ -400,7 +533,7 @@ frame_progress = 0.515907
 script = ExtResource("11_kv3pd")
 off_camera_pos = Vector2(2.08165e-12, 721)
 
-[node name="frame1" type="AnimatedSprite2D" parent="panelStranger"]
+[node name="blank" type="AnimatedSprite2D" parent="panelStranger"]
 sprite_frames = SubResource("SpriteFrames_fk6wi")
 
 [node name="panelTexts" type="AnimatedSprite2D" parent="."]
@@ -431,7 +564,7 @@ theme_override_font_sizes/normal_font_size = 14
 text = "Text Messages"
 fit_content = true
 
-[node name="frame1" type="AnimatedSprite2D" parent="panelTexts"]
+[node name="blank" type="AnimatedSprite2D" parent="panelTexts"]
 sprite_frames = SubResource("SpriteFrames_3isub")
 
 [node name="Camera2D" type="Camera2D" parent="."]
