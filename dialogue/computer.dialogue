@@ -21,6 +21,9 @@ do panel_pull_signaled.emit("panelInternal", "blank")
 do wait(2.0)
 do internal_text_signaled.emit("Hmph. This makes sense, right?")
 do wait(2.0)
+do panel_pull_signaled.emit("panelStranger", "blank")
+do wait(1.0)
+
 - It sure does.
 	do internal_text_signaled.emit("Yeah... this is good. It's fine.")
 	do wait(2.0)
@@ -58,7 +61,7 @@ do panel_pull_signaled.emit("panelEyesWin","disappointed_closed")
 do internal_text_signaled.emit("Anthropology is so stupid.")
 do panel_pull_signaled.emit("panelStranger", "blank")
 do wait(1.0)
-wuthkwshgflshdgvj
+wuthkwshgflshdgvj.
 do panel_push_signaled.emit("panelStranger")
 do panel_push_signaled.emit("panelClock")
 do panel_push_signaled.emit("panelInternal")
@@ -67,38 +70,50 @@ do panel_pull_signaled.emit("panelEyesWin", "smirk_down")
 do wait(3.5)
 do panel_pull_signaled.emit("panelTexts", "blank")
 do panel_text_signaled.emit("CONNOR", "missing u. U doing ok?")
-do panel_pull_signaled.emit("panelStranger", "blank")
 do wait(3.0)
+do panel_pull_signaled.emit("panelStranger", "blank")
+do panel_push_signaled.emit("panelTable")
+do wait(1.0)
 - i'm doing ok. How r u?
 	do panel_push_signaled.emit("panelStranger")
+	do panel_pull_signaled.emit("panelTable","text_active")
 	do panel_text_signaled.emit("SERENITY", "i'm doing ok. how r u")
 	do wait(4.5)
+	do panel_pull_signaled.emit("panelTable","text_inactive")
 	do panel_text_signaled.emit("CONNOR", "Doing ok. Just checking on u.")
 	do wait(3.5)
+	do panel_pull_signaled.emit("panelTable","text_active")
 	do panel_text_signaled.emit("SERENITY", "the sweetest ^^")
 	do wait(3.0)
 	=> s004
 - u sensed my struggle.
 	do panel_push_signaled.emit("panelStranger")
+	do panel_pull_signaled.emit("panelTable","text_active")
 	do panel_text_signaled.emit("SERENITY", "u sensed my struggle.")
 	do wait(2.5)
 	do panel_text_signaled.emit("SERENITY", "head is spinning with this essay.")
 	do wait(2.5)
 	do panel_text_signaled.emit("SERENITY", "y did i do this?")
 	do wait(4.5)
+	do panel_pull_signaled.emit("panelTable","text_inactive")
 	do panel_text_signaled.emit("CONNOR", "BC ur the smartest around.")
 	do wait(2.5)
+	do panel_pull_signaled.emit("panelTable","text_active")
 	do panel_text_signaled.emit("SERENITY", "u think u can get lucky with that sweet talk.")
 	do wait(3.0)
+	do panel_pull_signaled.emit("panelTable","text_active")
 	do panel_text_signaled.emit("SERENITY", "U'd be right ;p.")
 	do wait(3.0)
 	=> s004
 - missing u more.
 	do panel_push_signaled.emit("panelStranger")
+	do panel_pull_signaled.emit("panelTable","text_active")
 	do panel_text_signaled.emit("SERENITY", "missing u more. wish i wasn't stuck with this essay.")
 	do wait(4.5)
+	do panel_pull_signaled.emit("panelTable","text_inactive")
 	do panel_text_signaled.emit("CONNOR", "I know, ur hard work will pay off.")
 	do wait(3.5)
+	do panel_pull_signaled.emit("panelTable","text_active")
 	do panel_text_signaled.emit("SERENITY", "if u say so ;p")
 	do wait(3.0)
 
@@ -137,6 +152,7 @@ do panel_text_signaled.emit("CONNOR", "It's bid nite. Gotta b there for the newb
 do wait(3.0)
 do panel_push_signaled.emit("panelInternal")
 do panel_pull_signaled.emit("panelStranger", "blank")
+do wait(2.0)
 - is merson going to be there?
 	do panel_push_signaled.emit("panelStranger")
 	do panel_text_signaled.emit("SERENITY", "is merson going to b there?.")
@@ -263,6 +279,7 @@ do panel_pull_signaled.emit("panelEyesWin", "suspicious_down")
 do panel_pull_signaled.emit("panelStranger", "blank")
 do wait(1.0)
 - do u think she's hot?
+	do panel_push_signaled.emit("panelStranger")
 	do panel_text_signaled.emit("SERENITY", "do u think she's hot?")
 	do panel_pull_signaled.emit("panelTable", "text_active")
 	do wait(2.5)
@@ -289,6 +306,7 @@ do wait(1.0)
 	do wait(4.5)
 	=> s007p
 - u ok with merson doing that?
+	do panel_push_signaled.emit("panelStranger")
 	do panel_text_signaled.emit("SERENITY", "u okay with merson doing that?")
 	do panel_pull_signaled.emit("panelTable", "text_active")
 	do wait(3.5)
@@ -316,7 +334,7 @@ do wait(1.0)
 	do panel_text_signaled.emit("CONNOR", "if merson likes her, then merson likes her. ")
 	do wait(3.0)
 	do panel_pull_signaled.emit("panelTable", "text_active")
-	do panel_pull_signaled.emit("panelEyesWin", "smirk_down")
+	do panel_pull_signaled.emit("panelEyesWin", "satisfied_down")
 	do panel_text_signaled.emit("SERENITY", "how mature of u.")
 	do wait(3.2)
 	do panel_text_signaled.emit("SERENITY", "no wonder casey kept u for so long.")
@@ -345,13 +363,15 @@ do panel_pull_signaled.emit("panelEyesWin", "satisfied_down")
 do panel_text_signaled.emit("CONNOR", "i'll try. many kisses ur way.")
 do wait(3.0)
 do panel_pull_signaled.emit("panelTable", "text_active")
-do panel_pull_signaled.emit("panelEyesWin", "disappointed_down")
+do panel_pull_signaled.emit("panelEyesWin", "satisfied_down")
 do panel_text_signaled.emit("SERENITY", "kisses caught ^^")
+do internal_text_signaled.emit("")
 do wait(3.0)
 do panel_push_signaled.emit("panelTexts")
 do panel_push_signaled.emit("panelTable")
 do panel_pull_signaled.emit("panelComputer","essay")
 do panel_pull_signaled.emit("panelInternal","blank")
+do panel_pull_signaled.emit("panelEyesWin", "disappointed_down")
 do wait(1.5)
 do panel_pull_signaled.emit("panelEyesWin", "concentrated")
 do internal_text_signaled.emit("Alright. Where were we?")
@@ -366,6 +386,7 @@ do wait(4.0)
 
 ~ s1essay
 do wait(1.0)
+do internal_text_signaled.emit("")
 do panel_pull_signaled.emit("panelClock","936")
 do wait(2.0)
 do panel_pull_signaled.emit("panelTable","type_phone_off")
@@ -391,6 +412,7 @@ do wait(6.0)
 
 ~ s2casey
 do wait(1.0)
+do internal_text_signaled.emit("")
 do panel_pull_signaled.emit("panelClock","1027")
 do wait(2.0)
 do panel_pull_signaled.emit("panelTable","stop_phone_off")
@@ -404,7 +426,7 @@ do panel_push_signaled.emit("panelTable")
 do internal_text_signaled.emit("Would Connor bring me cheese if I asked him?")
 do wait(3.5)
 do panel_pull_signaled.emit("panelTable","text_active")
-do panel_pull_signaled.emit("panelEyesWin","smirk_down")
+do panel_pull_signaled.emit("panelEyesWin","satisfied_down")
 do panel_text_signaled.emit("SERENITY", "Important q, would u bring me cheese if i asked u.")
 do wait(3.0)
 do panel_pull_signaled.emit("panelTexts","blank")
@@ -415,6 +437,7 @@ do panel_pull_signaled.emit("panelEyesWin","aha")
 do panel_pull_signaled.emit("panelTable","text_inactive")
 do internal_text_signaled.emit("Cheese is my love language.")
 do wait(4.1)
+do panel_pull_signaled.emit("panelEyesWin","satisfied_down")
 do panel_pull_signaled.emit("panelTable","text_active")
 do panel_text_signaled.emit("SERENITY", "Cheese is my love language, btw.")
 do wait(3.0)
@@ -424,8 +447,10 @@ do panel_pull_signaled.emit("panelInternal", "blank")
 do wait(3.5)
 do internal_text_signaled.emit("Would Casey text something like that to him?")
 do wait(3.0)
+do panel_pull_signaled.emit("panelEyesWin","disappointed_down")
 do internal_text_signaled.emit("Shit, I doubt it.")
-do wait(2.5)
+do wait(4.5)
+do panel_pull_signaled.emit("panelEyesWin","satisfied_down")
 do panel_pull_signaled.emit("panelTable","text_active")
 do panel_text_signaled.emit("SERENITY", "missing u, how's bid night?")
 do wait(2.0)
@@ -435,7 +460,8 @@ do panel_push_signaled.emit("panelComputer")
 do panel_push_signaled.emit("panelClock")
 do wait(2.0)
 do internal_text_signaled.emit("Great.")
-do wait(3.0)
+do panel_pull_signaled.emit("panelEyesWin","disappointed_down")
+do wait(4.0)
 do panel_push_signaled.emit("panelTexts")
 do panel_push_signaled.emit("panelEyesWin")
 do panel_push_signaled.emit("panelInternal")
@@ -445,6 +471,7 @@ do wait(6.0)
 
 ~ s3hoot83
 do wait(1.0)
+do internal_text_signaled.emit("")
 do panel_pull_signaled.emit("panelClock","1154")
 do wait(2.0)
 do panel_pull_signaled.emit("panelEyesWin","tired")
@@ -477,11 +504,13 @@ do internal_text_signaled.emit("I know hoot guy would give me attention right no
 do wait(3.5)
 do internal_text_signaled.emit("I could use the money right now too.")
 do wait(4.0)
+do panel_pull_signaled.emit("panelEyesWin","disappointed_down")
 do internal_text_signaled.emit("But I can't be bothered.")
 do wait(3.5)
 do panel_pull_signaled.emit("panelComputer","essay")
 do panel_push_signaled.emit("panelClock")
 do wait(2.0)
+do panel_pull_signaled.emit("panelEyesWin","concentrated")
 do internal_text_signaled.emit("I can wrap this up. Two hours tops.")
 do wait(3.0)
 do panel_push_signaled.emit("panelInternal")
@@ -492,6 +521,7 @@ do wait(6.0)
 
 ~ s4caseyconnor
 do wait(1.0)
+do internal_text_signaled.emit("")
 do panel_pull_signaled.emit("panelClock","127")
 do wait(2.0)
 do panel_pull_signaled.emit("panelEyesWin","tired")
@@ -1026,6 +1056,529 @@ do wait(1.0)
 	=> s200
 
 ~ s100
-text
+do wait(0.5)
+do panel_push_signaled.emit("panelInternal")
+do panel_push_signaled.emit("panelComputer")
+do internal_text_signaled.emit("")
+do wait(1.0)
+do panel_push_signaled.emit("panelStranger")
+do panel_pull_signaled.emit("panelTable","text_active")
+do panel_text_signaled.emit("SERENITY", "42 Hemington Way.")
+do wait(1.0)
+do panel_pull_signaled.emit("panelTexts","blank")
+do wait(3.0)
+do panel_text_signaled.emit("SERENITY", "R u coming over now? I need ur help.")
+do wait(2.0)
+do panel_pull_signaled.emit("panelTable","text_inactive")
+do wait(5.0)
+do panel_pull_signaled.emit("panelTable","text_active")
+do panel_text_signaled.emit("SERENITY", "Connor?")
+do wait(2.0)
+do panel_pull_signaled.emit("panelTable","text_inactive")
+do wait(5.0)
+do panel_pull_signaled.emit("panelComputer","chat_notification")
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+Hoot83: Oh Siren. I expected more of you.
+do wait(0.5)
+do panel_pull_signaled.emit("panelEyesWin","freaked_down")
+do panel_pull_signaled.emit("panelTable","text_active")
+do panel_text_signaled.emit("CALLING CONNOR", "........")
+do wait(3.0)
+do panel_pull_signaled.emit("panelTable","text_inactive")
+do panel_text_signaled.emit("CALL FAILED", "")
+do wait(2.5)
+do panel_push_signaled.emit("panelTable")
+do panel_pull_signaled.emit("panelEyesWin","freaked")
+Hoot83: He's not going to answer I'm afraid. 
+do wait(1.0)
+do panel_push_signaled.emit("panelTexts")
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+do panel_pull_signaled.emit("panelEyesWin","angry")
+Siren_4: Who the fuck are you.
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+do panel_pull_signaled.emit("panelEyesWin","worried")
+Hoot83: I'm only a stranger.
+do wait(1.0)
+do panel_push_signaled.emit("panelTable")
+Hoot83: A stranger who's disappointed in you, unfortunately.
+do panel_pull_signaled.emit("panelEyesWin","freaked")
+Hoot83: I told you not to give him your address, but you didn't listen.
+do wait(1.0)
+do panel_push_signaled.emit("panelStranger")
+do panel_pull_signaled.emit("panelEyesWin","freaked_down")
+do panel_pull_signaled.emit("panelTable","text_active")
+do panel_text_signaled.emit("CALLING CONNOR", "........")
+do wait(0.5)
+do panel_pull_signaled.emit("panelTexts","blank")
+do wait(4.0)
+do panel_pull_signaled.emit("panelInternal","blank")
+do wait(1.0)
+do internal_text_signaled.emit("Please, Connor?")
+do wait(3.0)
+do panel_pull_signaled.emit("panelTable","text_inactive")
+do panel_text_signaled.emit("SHUTTING DOWN...", "")
+do wait(4.5)
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+do panel_push_signaled.emit("panelTable")
+Hoot83: Stop that now. I'm speaking to you, and I'd like for you to respond. 
+do internal_text_signaled.emit("No, no... my phone was charged?")
+do wait(2.0)
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+do panel_pull_signaled.emit("panelEyesWin","angry")
+do panel_push_signaled.emit("panelTexts")
+Siren_4: What is going on? Who are you?
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+do panel_pull_signaled.emit("panelEyesWin","worried")
+Hoot83: It's so critical, even for someone like you Siren, to listen to those that know better. 
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+Siren_4: What do you know?
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+Hoot83: I know when I'm being used by a clueless young woman for money. I find it quite endearing, for someone as smart as you to still find ways to tow the line between good and bad.
+do panel_push_signaled.emit("panelInternal")
+Hoot83: I would've certainly continued to be kind to you. I have an affinity for smart women making poor decisions.
+do internal_text_signaled.emit("")
+Hoot83: It's a shame that the poor decision made here was getting familiar with a stupid man.
+do panel_pull_signaled.emit("panelEyesWin","freaked")
+Hoot83: It's those with an obtuse approach to life, where their nonchalant behavior comes off as appealing, yet they lack the executive function skills to make the blatant right decisions according to the circumstances they find themselves in.
+Hoot83: A frustrating reality when it comes to the subpar variety of humanity.
+do panel_push_signaled.emit("panelStranger")
+do panel_pull_signaled.emit("panelInternal","blank")
+do wait(1.0)
+do panel_pull_signaled.emit("panelEyesWin","concentrated")
+do internal_text_signaled.emit("What the fuck is this dude talking about. I'm out of here.")
+do wait(3.0)
+do panel_push_signaled.emit("panelTable")
+do panel_pull_signaled.emit("panelDoor","banging")
+do panel_pull_signaled.emit("panelEyesWin","freaked_door")
+do panel_push_signaled.emit("panelComputer")
+do panel_push_signaled.emit("panelInternal")
+do internal_text_signaled.emit("")
+do wait(5.0)
+do panel_pull_signaled.emit("panelDoor","static")
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+do panel_pull_signaled.emit("panelComputer","chat_notification")
+Hoot83: Stay put, Siren. Humor me while I share the truth.
+do panel_push_signaled.emit("panelStranger")
+do wait(1.0)
+do panel_pull_signaled.emit("panelInternal","blank")
+do wait(1.0)
+do internal_text_signaled.emit("Who's there? Connor is that you?")
+do wait(3.0)
+do panel_pull_signaled.emit("panelDoor","banging")
+do internal_text_signaled.emit("Connor this is a sick joke, you piece of shit!")
+do wait(3.0)
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+do panel_pull_signaled.emit("panelEyesWin","freaked")
+Hoot83: Connor Tuttle attended a fraternity party last night, you know this yes?
+do panel_push_signaled.emit("panelStranger")
+do wait(1.0)
+do internal_text_signaled.emit("I'm unplugging this thing.")
+do wait(3.0)
+do panel_pull_signaled.emit("panelDoor","banging")
+do panel_pull_signaled.emit("panelEyesWin","freaked_door")
+do panel_push_signaled.emit("panelInternal")
+do panel_push_signaled.emit("panelComputer")
+do wait(5.0)
+do internal_text_signaled.emit("")
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+do panel_pull_signaled.emit("panelEyesWin","freaked")
+do panel_pull_signaled.emit("panelComputer","chat_notification")
+Hoot83: Do not unplug the computer. This is your only warning. Respond to me. 
+Hoot83: Connor Tuttle was at the fraternity party, yes?
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+Siren_4: Yes, I know.
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+Hoot83: And you are aware of Connor Tuttle's close aquaintance, Siren? Merson Lawson?
+Siren_4: ...
+- Yes, I do.
+	=> s101a
+- No, I don't.
+	=> s101b
+
 ~ s200
-text
+do wait(0.5)
+do panel_push_signaled.emit("panelInternal")
+do panel_push_signaled.emit("panelComputer")
+do internal_text_signaled.emit("")
+do wait(1.0)
+do panel_push_signaled.emit("panelStranger")
+do panel_pull_signaled.emit("panelTable","text_active")
+do panel_text_signaled.emit("SERENITY", "Fuck Off.")
+do wait(2.0)
+do panel_pull_signaled.emit("panelTable","text_inactive")
+do panel_pull_signaled.emit("panelTexts","blank")
+do wait(5.5)
+do panel_pull_signaled.emit("panelComputer","chat_notification")
+do panel_pull_signaled.emit("panelStranger","blank")
+do panel_push_signaled.emit("panelTexts")
+do wait(1.0)
+do panel_pull_signaled.emit("panelEyesWin","worried")
+do panel_push_signaled.emit("panelTable")
+Hoot83: He won't answer any longer, Siren. It's just you and me now.
+do panel_pull_signaled.emit("panelEyesWin","angry")
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+Siren_4: Who the fuck are you.
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+do panel_pull_signaled.emit("panelEyesWin","worried")
+Hoot83: I'm only a stranger. A stranger who's proud of you.
+Hoot83: You didn't give him the address, therefore the doorway to your subsequent fate is clear of obstruction. 
+do panel_push_signaled.emit("panelStranger")
+do panel_push_signaled.emit("panelTable")
+do panel_pull_signaled.emit("panelEyesWin","concentrated")
+do panel_pull_signaled.emit("panelInternal","blank")
+do wait(1.0)
+do internal_text_signaled.emit("What?")
+do wait(2.0)
+do internal_text_signaled.emit("This is some joke. Must be Merson.")
+do wait(3.0)
+do panel_pull_signaled.emit("panelEyesWin","disappointed_closed")
+do internal_text_signaled.emit("This entire time I've been trying to seduce Merson for money, Jesus.")
+do wait(4.0)
+do panel_pull_signaled.emit("panelEyesWin","smirk_down")
+do panel_pull_signaled.emit("panelTable","text_active")
+do panel_text_signaled.emit("CALLING CONNOR", "........")
+do wait(0.5)
+do panel_pull_signaled.emit("panelTexts","blank")
+do wait(4.0)
+do panel_pull_signaled.emit("panelInternal","blank")
+do wait(1.0)
+do internal_text_signaled.emit("Pick up, Connor.")
+do wait(3.0)
+do panel_pull_signaled.emit("panelTable","text_inactive")
+do panel_text_signaled.emit("SHUTTING DOWN...", "")
+do wait(4.5)
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+do panel_push_signaled.emit("panelTable")
+Hoot83: Stop that now. I'm speaking to you, and I'd like for you to respond. 
+do internal_text_signaled.emit("No, what? My phone was charged?")
+do wait(2.0)
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+do panel_pull_signaled.emit("panelEyesWin","angry")
+do panel_push_signaled.emit("panelTexts")
+Siren_4: What is going on? Merson you asshole.
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+do panel_pull_signaled.emit("panelEyesWin","worried")
+Hoot83: It's so critical, even for someone like you Siren, to listen to those that know better. 
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+Siren_4: What do you know?
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+Hoot83: I know when I'm being used by a clueless young woman for money. I find it quite endearing, for someone as smart as you to still find ways to tow the line between good and bad.
+do panel_push_signaled.emit("panelInternal")
+Hoot83: I would've certainly continued to be kind to you. I have an affinity for smart women making poor decisions.
+do internal_text_signaled.emit("")
+Hoot83: It's a shame that the poor decision made here was getting familiar with a stupid man.
+do panel_pull_signaled.emit("panelEyesWin","freaked")
+Hoot83: It's those with an obtuse approach to life, where their nonchalant behavior comes off as appealing, yet they lack the executive function skills to make the blatant right decisions according to the circumstances they find themselves in.
+Hoot83: A frustrating reality when it comes to the subpar variety of humanity.
+do panel_push_signaled.emit("panelStranger")
+do panel_pull_signaled.emit("panelInternal","blank")
+do wait(1.0)
+do panel_pull_signaled.emit("panelEyesWin","concentrated")
+do internal_text_signaled.emit("What the fuck is this dude talking about. I'm out of here.")
+do wait(3.0)
+do panel_push_signaled.emit("panelTable")
+do panel_pull_signaled.emit("panelDoor","banging")
+do panel_pull_signaled.emit("panelEyesWin","freaked_door")
+do panel_push_signaled.emit("panelComputer")
+do panel_push_signaled.emit("panelInternal")
+do internal_text_signaled.emit("")
+do wait(5.0)
+do panel_pull_signaled.emit("panelDoor","static")
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+do panel_pull_signaled.emit("panelComputer","chat_notification")
+Hoot83: Stay put, Siren. Humor me while I share the truth.
+do panel_push_signaled.emit("panelStranger")
+do wait(1.0)
+do panel_pull_signaled.emit("panelInternal","blank")
+do wait(1.0)
+do internal_text_signaled.emit("Who's there? Connor is that you?")
+do wait(3.0)
+do panel_pull_signaled.emit("panelDoor","banging")
+do internal_text_signaled.emit("Connor this is a sick joke, you piece of shit! Did Merson put you up to this?")
+do wait(4.5)
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+do panel_pull_signaled.emit("panelEyesWin","freaked")
+Hoot83: Connor Tuttle attended a fraternity party last night, you know this yes?
+do panel_push_signaled.emit("panelStranger")
+do wait(1.0)
+do internal_text_signaled.emit("I'm unplugging this thing.")
+do wait(3.0)
+do panel_push_signaled.emit("panelComputer")
+do panel_pull_signaled.emit("panelDoor","banging")
+do panel_pull_signaled.emit("panelEyesWin","freaked_door")
+do panel_push_signaled.emit("panelInternal")
+do wait(5.0)
+do internal_text_signaled.emit("")
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+do panel_pull_signaled.emit("panelEyesWin","freaked")
+do panel_pull_signaled.emit("panelComputer","chat_notification")
+Hoot83: Do not unplug the computer. This is your only warning. Respond to me. 
+Hoot83: Connor Tuttle was at the fraternity party, yes?
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+Siren_4: Yes, I know.
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+Hoot83: And you are aware of Connor Tuttle's close aquaintance, Siren? Merson Lawson?
+Siren_4: ...
+- Yes, I do.
+	=> s101a
+- No, I don't.
+	=> s101b
+
+~ s101a
+do panel_pull_signaled.emit("panelEyesWin","concentrated")
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+Siren_4: Serenity: Yes, I do. What does he have to do with anything?
+
+~ s101b
+do panel_pull_signaled.emit("panelEyesWin","concentrated")
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+Siren_4: No, I don't really know him that well. Just that he's a frat friend of Connor. What does this have to do with anything?
+
+~ s102
+do wait(0.5)
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+do panel_push_signaled.emit("panelDoor")
+Hoot83: Merson Lawson, highly intoxicated and carrying a beer bottle, walked into a neighboring parking lot, where he found and approached an individual by the name of Casey Watkins.
+do panel_pull_signaled.emit("panelEyesWin","freaked")
+Hoot83: You certainly know her. 
+do panel_pull_signaled.emit("panelInternal","blank")
+do wait(1.0)
+do internal_text_signaled.emit("Casey...")
+do wait(2.5)
+do panel_push_signaled.emit("panelTable")
+do panel_push_signaled.emit("panelInternal")
+do panel_push_signaled.emit("panelComputer")
+do panel_push_signaled.emit("panelEyesWin")
+do internal_text_signaled.emit("")
+Hoot83: Merson Lawson attempted to converse with Casey Watkins, and the moment she rejected his advances...
+Hoot83: Merson Lawson assaulted her, smashing his beer bottle into the side of her head. 
+do panel_push_signaled.emit("panelStranger")
+do wait(3.5)
+do panel_pull_signaled.emit("panelInternal","blank")
+do panel_pull_signaled.emit("panelEyesWin","freaked")
+do wait(1.0)
+do internal_text_signaled.emit("Oh my god.")
+do wait(3.0)
+do panel_pull_signaled.emit("panelComputer","chat_notification")
+do panel_pull_signaled.emit("panelStranger","blank")
+do panel_push_signaled.emit("panelInternal")
+do internal_text_signaled.emit("")
+do wait(1.0)
+Hoot83: Merson Lawson's behavior and actions against Casey Watkins were unquestionably unjustified and disturbing.
+Hoot83: But what I'm most appalled at, really. 
+Hoot83: Is the inaction of your boyfriend, Connor Tuttle, as he stood next to Casey Watkins - quite intimatetly, mind you - prior to Merson Lawson's appearance.
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+Hoot83: Now, doesn't that infuriate you? 
+Hoot83: What in the world was Connor Tuttle doing with Casey Watkins, after he repeatedly told you that he was through with her, hm?
+do panel_pull_signaled.emit("panelInternal","blank")
+do wait(1.0)
+do internal_text_signaled.emit("What is this...")
+do wait(2.0)
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+Siren_4: Please, leave me alone. 
+do panel_push_signaled.emit("panelStranger")
+do panel_pull_signaled.emit("panelDoor","static")
+do wait(1.5)
+do panel_pull_signaled.emit("panelEyesWin","freaked_door")
+do internal_text_signaled.emit("Connor! Are you outside??")
+do wait(3.0)
+do internal_text_signaled.emit("Connor!!")
+do wait(3.0)
+do panel_pull_signaled.emit("panelStranger","blank")
+do panel_push_signaled.emit("panelInternal")
+do internal_text_signaled.emit("")
+do panel_pull_signaled.emit("panelEyesWin","freaked")
+Hoot83: You want me here, Siren. I have come by song so intoxicating, looks so mesmerizing, and I give you truth.
+...
+- ((Get up from desk))
+	=> s103
+- ((Stay put))
+	=> s103
+
+~ s103
+do wait(0.2)
+do panel_push_signaled.emit("panelStranger")
+do panel_push_signaled.emit("panelTable")
+do panel_push_signaled.emit("panelComputer")
+do panel_pull_signaled.emit("panelDoor","banging")
+do panel_pull_signaled.emit("panelEyesWin","freaked_door")
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+do panel_pull_signaled.emit("panelEyesWin","freaked")
+Hoot83: Do you know how Sirens are born, Serenity Scott? 
+do panel_pull_signaled.emit("panelInternal","blank")
+do wait(1.0)
+do internal_text_signaled.emit("Please... stop this.")
+do wait(3.0)
+do panel_frenzy_signaled.emit("panelDoor","static")
+Hoot83: They start out as young women. Bright, clever, beautiful - just as you are.
+do panel_push_signaled.emit("panelDoor")
+do panel_push_signaled.emit("panelInternal")
+do internal_text_signaled.emit("")
+do wait(1.0)
+Hoot83: A young woman who has the world in her palms, and a future so hopeful that any father would shed a tear to have a daughter so good as you. 
+Hoot83: This stranger has soft eyes, stubble on his chin, a charming way about him.
+do panel_pull_signaled.emit("panelInternal","blank")
+do wait(1.0)
+do panel_frenzy_signaled.emit("panelClock","???")
+do panel_pull_signaled.emit("panelEyesWin","freaked_door")
+do internal_text_signaled.emit("Connor! Are you there? Please???")
+do wait(3.0)
+do panel_frenzy_signaled.emit("panelComputer","chat_notification")
+Hoot83: And this stranger tells the woman that she is the brightest, the cleverest, the most beautiful. 
+Hoot83: And he asks her to swear her love for him. 
+do panel_push_signaled.emit("panelInternal")
+do internal_text_signaled.emit("")
+do panel_frenzy_signaled.emit("panelTable","stop_phone_off")
+Hoot83: To which the bright, clever, and beautiful woman does with such simple-minded, naive, and ugly haste.
+Hoot83: They bed together, and their shared love is cemented, solidified between their sheets. 
+Hoot83: And the very moment they say goodnight, her eyes closed and soul lifted, the words and movements of her love locked forever mind and heart, the stranger leaves in the middle of the night.
+Hoot83: All in search for prey brighter, cleverer, and more beautiful to conquer.
+Hoot83: Soon the young woman wakes up to emptiness beside her, and her initial confusion as to where her lover went turns to dispondency, then to disarray, then to mania.
+do panel_pull_signaled.emit("panelDoor","banging")
+do panel_pull_signaled.emit("panelEyesWin","freaked_door")
+do wait(5.0)
+Hoot83: It's a simple turn of events from there, is it not Serenity Scott?
+Hoot83: Her body never washes up on shore, despite days of search by the town.
+Hoot83: And a community mourns the loss of such a woman whose unexplainable dissapearance leaves everyone with a sense of looming dread for what an answer would mean. 
+Hoot83: But we don't need an answer to a story we already know the ending to, isn't that right sweet Siren?
+do panel_push_signaled.emit("panelStranger")
+do wait(1.0)
+do panel_push_signaled.emit("panelEyesWin")
+do panel_push_signaled.emit("panelDoor")
+do wait(5.0)
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+Hoot83: [speed=0.3]No one will find Casey Hawkins' body at the bottom of Altamaha River.
+Hoot83: Though not because she's dead and gone, at the hands of evil men.
+Hoot83: But because she rose from the depths, renewed as a bright, clever, and beautiful Siren. 
+Hoot83: Emboldened by the actions done against her when she was human.
+Hoot83: So hold no fear, Serenity Scott, for what's to come for you.
+do panel_push_signaled.emit("panelStranger")
+do wait(3.0)
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+do wait(2.0)
+do panel_pull_signaled.emit("panelEyesWin","tears")
+do wait(5.0)
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+Siren_4: [speed=0.3]What do you want from me?
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+Hoot83: I want you to make a choice, Siren. 
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+Siren_4: Just tell me what you want me to do, I swear I haven't done anything wrong.
+do panel_push_signaled.emit("panelStranger")
+do panel_push_signaled.emit("panelTable")
+do wait(1.0)
+do panel_pull_signaled.emit("panelDoor","banging")
+do panel_pull_signaled.emit("panelEyesWin","tears_door")
+do wait(5.0)
+do panel_pull_signaled.emit("panelDoor","static")
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+do panel_pull_signaled.emit("panelEyesWin","tears")
+Hoot83: The door must be opened. That will bring an end to this torment. 
+Hoot83: And perhaps give you some needed air, after such a tiresome night.
+do panel_pull_signaled.emit("panelTable","type_phone_off")
+Siren4: What's on the other side of my door? 
+do panel_pull_signaled.emit("panelTable","stop_phone_off")
+Hoot83: You will know once it's opened.
+...
+- ((Open Door.))
+	Siren_4: Okay. I'll open the door.
+	do wait(2.0)
+	Hoot83: Good.
+	Hoot83: If that is what you desire.
+	do panel_push_signaled.emit("panelTable")
+	Hoot83: I wish you some form of peace for your next journey.
+	Hoot83: Not to say what's standing on the other side of your door will grant you that.
+	do panel_push_signaled.emit("panelStranger")
+	do panel_pull_signaled.emit("panelEyesWin","tears_door")
+	do wait(5.0)
+	do panel_pull_signaled.emit("panelEyesWin","tears")
+	do wait(6.0)
+	do panel_pull_signaled.emit("panelStranger","blank")
+	do panel_pull_signaled.emit("panelComputer","chat_notification")
+	do wait(1.0)
+	Hoot83: Before you open the door.
+	Hoot83: Whatever hate and confusion you have for me in this given moment.
+	Hoot83: Please keep in mind.
+	Hoot83: [speed=0.3] I've been protecting you from what's on the other side.
+	do panel_push_signaled.emit("panelStranger")
+	do panel_frenzy_signaled.emit("panelClock","???")
+	do panel_frenzy_signaled.emit("panelTable","stop_phone_off")
+	do panel_frenzy_signaled.emit("panelComputer","chat_notification")
+	do panel_frenzy_signaled.emit("panelEyesWin","tears_door")
+	do panel_pull_signaled.emit("panelDoor","banging")
+	do wait(15.0)
+	do panel_pull_signaled.emit("panelDoor","open")
+	do wait(4.0)
+	do panel_pull_signaled.emit("panelMain","frame1")
+	do wait(3.0)
+	do endgame_signaled.emit()
+	=> END
+- ((Stay Put.))
+	Siren_4: I don't want to. I'm not going to open that door. 
+	do wait(2.0)
+	Hoot83: Hm. 
+	Hoot83: If that is what you desire.
+	do panel_push_signaled.emit("panelTable")
+	Hoot83: I wish you some form of peace for your next journey.
+	Hoot83: Not to say what's standing on the other side of your door will grant you that.
+	do panel_push_signaled.emit("panelStranger")
+	do panel_pull_signaled.emit("panelEyesWin","tears_door")
+	do wait(5.0)
+	do panel_pull_signaled.emit("panelEyesWin","tears")
+	do wait(6.0)
+	do panel_pull_signaled.emit("panelStranger","blank")
+	do panel_pull_signaled.emit("panelComputer","chat_notification")
+	do wait(1.0)
+	Hoot83: It's amusing to me that you refuse to open the door.
+	Hoot83: All I ask is that you keep in mind
+	Hoot83: [speed=0.3] I've been protecting you from what's on the other side.
+	do panel_push_signaled.emit("panelStranger")
+	do panel_frenzy_signaled.emit("panelClock","???")
+	do panel_frenzy_signaled.emit("panelTable","stop_phone_off")
+	do panel_frenzy_signaled.emit("panelComputer","chat_notification")
+	do panel_frenzy_signaled.emit("panelEyesWin","tears_door")
+	do panel_pull_signaled.emit("panelDoor","banging")
+	do wait(15.0)
+	do wait(1.0)
+	do panel_pull_signaled.emit("panelDoor","open")
+	do wait(4.0)
+	do panel_pull_signaled.emit("panelMain","frame1")
+	do wait(3.0)
+	do endgame_signaled.emit()
+	=> END
+~ end
+do wait(6.0)
+do panel_pull_signaled.emit("panelComputer","chat_notification")
+do panel_pull_signaled.emit("panelStranger","blank")
+do wait(1.0)
+Hoot83:[speed=0.2] Sleep well, sweet Siren.
+do panel_push_signaled.emit("panelStranger")
+do wait(8.0)
+do panel_pull_signaled.emit("panelClock","1000")
+do panel_text_signaled.emit("CONNOR","Thought I'd drop over some food, if you're not too busy.")
+do wait(0.3)
+do panel_pull_signaled.emit("panelTable","only_phone")
+do panel_pull_signaled.emit("panelTexts")
+do wait(4.0)
+do panel_text_signaled.emit("CONNOR","Sorry for the way I was behaving.")
+do wait(7.0)
+do panel_push_signaled.emit("panelTable")
+do panel_text_signaled.emit("CONNOR","Serenity?")
+do wait(5.0)
+do panel_push_signaled.emit("panelClock")
+do panel_push_signaled.emit("panelTexts")
+do titlecard_signaled.emit( )
