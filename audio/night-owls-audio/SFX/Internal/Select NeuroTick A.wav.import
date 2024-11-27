@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://xsgfco8k3eet"
+path="res://.godot/imported/Select NeuroTick A.wav-990754e880f70112864d87d9886ec5f7.sample"
+
+[deps]
+
+source_file="res://audio/night-owls-audio/SFX/Internal/Select NeuroTick A.wav"
+dest_files=["res://.godot/imported/Select NeuroTick A.wav-990754e880f70112864d87d9886ec5f7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

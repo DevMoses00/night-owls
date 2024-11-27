@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=18 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://dialogue/balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
 [ext_resource type="Texture2D" uid="uid://b4lpf2tqalh03" path="res://art/panels/panel_stranger_view/panel/frame_01.png" id="3_e0aih"]
 [ext_resource type="FontFile" uid="uid://cx6aolwptvfal" path="res://fonts/Montserrat/Montserrat-Regular.ttf" id="3_mk21e"]
+[ext_resource type="Texture2D" uid="uid://d1yq5rtcyh5rc" path="res://resources/indicator.png" id="4_uq3ah"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -67,6 +68,63 @@ MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 Panel/styles/panel = SubResource("StyleBoxFlat_uy0d5")
 
+[sub_resource type="Animation" id="Animation_meby2"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1022, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(630, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_n4tvy"]
+resource_name = "pos"
+loop_mode = 1
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1022, -0.25, 0, 0.25, 0, 1022, -0.25, 0, 0.25, 0, 1022, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(630, -0.25, 0, 0.25, 0, 637, -0.25, 0, 0.25, 0, 630, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k3lfk"]
+_data = {
+"RESET": SubResource("Animation_meby2"),
+"pos": SubResource("Animation_n4tvy")
+}
+
 [sub_resource type="FontVariation" id="FontVariation_mcckq"]
 base_font = ExtResource("3_mk21e")
 
@@ -90,9 +148,33 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_qq3yp")
 
+[node name="Indicator" type="TextureRect" parent="Balloon"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -258.0
+offset_top = -83.0
+offset_right = -218.0
+offset_bottom = -43.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture = ExtResource("4_uq3ah")
+expand_mode = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Balloon/Indicator"]
+libraries = {
+"": SubResource("AnimationLibrary_k3lfk")
+}
+autoplay = "pos"
+
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon"]
 unique_name_in_owner = true
-visible = false
 modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 offset_left = 214.0
@@ -129,6 +211,7 @@ size_flags_vertical = 3
 theme_override_colors/default_color = Color(0.933333, 0.933333, 0.933333, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = SubResource("FontVariation_w1wai")
+theme_override_font_sizes/normal_font_size = 20
 text = "Dialogue..."
 
 [node name="Panel" type="Panel" parent="Balloon"]

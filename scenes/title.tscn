@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://otnu3nb8wm46"]
+[gd_scene load_steps=15 format=3 uid="uid://otnu3nb8wm46"]
 
 [ext_resource type="Script" path="res://scripts/titleScript.gd" id="1_5nydr"]
 [ext_resource type="Texture2D" uid="uid://deg3ic8wp0g2k" path="res://art/background/frame_01.png" id="1_686cj"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bsdb7p5rcb6pg" path="res://art/background/frame_04.png" id="4_dpkot"]
 [ext_resource type="Texture2D" uid="uid://cwg58uokmcvqv" path="res://art/title/frame_04.png" id="4_tkt8y"]
 [ext_resource type="FontFile" uid="uid://dqhyh8esoirki" path="res://fonts/Amiatic/AmaticSC-Bold.ttf" id="10_t4w2i"]
+[ext_resource type="Texture2D" uid="uid://clyfv7jb4ajiy" path="res://art/vinemoss/b&W _1280.png" id="11_a6iqg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1rrkv"]
 animations = [{
@@ -90,3 +91,8 @@ theme_override_font_sizes/normal_font_size = 60
 text = "\"And where Nyarlathotep went, rest vanished, for the small hours were rent with the screams of nightmare.\"
 - H.P. Lovecraft"
 fit_content = true
+
+[node name="vineMoss" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+scale = Vector2(0.64, 0.64)
+texture = ExtResource("11_a6iqg")

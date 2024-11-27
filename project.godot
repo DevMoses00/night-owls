@@ -11,19 +11,22 @@ config_version=5
 [application]
 
 config/name="night-owls"
-config/features=PackedStringArray("4.1")
+run/main_scene="res://scenes/title.tscn"
+config/features=PackedStringArray("4.3")
 boot_splash/bg_color=Color(0, 0, 0, 1)
-config/icon="res://icon.svg"
+boot_splash/image="res://resources/VMLOGO_1280.png"
+config/icon="res://resources/night_owls_icon.svg"
 
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 ScriptManager="*res://scripts/ScriptManager.gd"
+SoundManager="*res://addons/sound_manager/module/SoundManager.tscn"
 
 [dialogue_manager]
 
 general/balloon_path="res://dialogue/balloon.tscn"
-general/states=["ScriptManager"]
+general/states=["ScriptManager", "SoundManager"]
 general/wrap_lines=true
 
 [display]
@@ -35,7 +38,7 @@ window/stretch/mode="viewport"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://addons/sound_manager/plugin.cfg")
 
 [internationalization]
 
@@ -44,6 +47,7 @@ locale/translations_pot_files=PackedStringArray("res://dialogue/computer.dialogu
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+textures/canvas_textures/default_texture_repeat=1
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 environment/defaults/default_clear_color=Color(0, 0, 0, 1)

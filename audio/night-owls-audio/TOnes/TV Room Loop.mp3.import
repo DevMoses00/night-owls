@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b5ygot4c83bhk"
+path="res://.godot/imported/TV Room Loop.mp3-8327fe0b9e60bcc1d7c61d62d6f75fd3.mp3str"
+
+[deps]
+
+source_file="res://audio/night-owls-audio/TOnes/TV Room Loop.mp3"
+dest_files=["res://.godot/imported/TV Room Loop.mp3-8327fe0b9e60bcc1d7c61d62d6f75fd3.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

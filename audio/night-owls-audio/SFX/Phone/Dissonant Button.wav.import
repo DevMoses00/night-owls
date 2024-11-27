@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dm6t8yabd4x8i"
+path="res://.godot/imported/Dissonant Button.wav-ccf0ae45224df15bf1c45c76dfe8d868.sample"
+
+[deps]
+
+source_file="res://audio/night-owls-audio/SFX/Phone/Dissonant Button.wav"
+dest_files=["res://.godot/imported/Dissonant Button.wav-ccf0ae45224df15bf1c45c76dfe8d868.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

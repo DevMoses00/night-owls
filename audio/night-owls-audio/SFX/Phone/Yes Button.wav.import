@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dpdgche25chsi"
+path="res://.godot/imported/Yes Button.wav-84280195f4cf860ff5f1b33ba8704af7.sample"
+
+[deps]
+
+source_file="res://audio/night-owls-audio/SFX/Phone/Yes Button.wav"
+dest_files=["res://.godot/imported/Yes Button.wav-84280195f4cf860ff5f1b33ba8704af7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

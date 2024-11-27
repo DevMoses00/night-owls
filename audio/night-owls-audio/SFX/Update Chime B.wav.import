@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://20n4pb75e8i7"
+path="res://.godot/imported/Update Chime B.wav-c63574b76df0ed7b0d286ce2f1ba7986.sample"
+
+[deps]
+
+source_file="res://audio/night-owls-audio/SFX/Update Chime B.wav"
+dest_files=["res://.godot/imported/Update Chime B.wav-c63574b76df0ed7b0d286ce2f1ba7986.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

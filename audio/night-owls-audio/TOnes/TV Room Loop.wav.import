@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://day3hy4x4je43"
+path="res://.godot/imported/TV Room Loop.wav-7a71514349152cddd5e762c85ff9271d.sample"
+
+[deps]
+
+source_file="res://audio/night-owls-audio/TOnes/TV Room Loop.wav"
+dest_files=["res://.godot/imported/TV Room Loop.wav-7a71514349152cddd5e762c85ff9271d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
