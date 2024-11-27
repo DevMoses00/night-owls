@@ -107,3 +107,16 @@ func titlecardfade():
 	SoundManager.fade_in_bgs("horrorLoop",1.0)
 	var fadeTween = get_tree().create_tween()
 	fadeTween.tween_property($title,"modulate",Color(1.0, 1.0, 1.0, 1.0), 4)
+	await get_tree().create_timer(3.0).timeout
+	$exit.show()
+
+
+
+func _on_exit_pressed() -> void:
+	get_tree().quit()
+
+func _on_check_button_toggled(toggled_on: bool) -> void:
+	if toggled_on == true:
+		$Background.hide()
+	else:
+		$Background.show()

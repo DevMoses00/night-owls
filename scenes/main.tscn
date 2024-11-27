@@ -1,4 +1,4 @@
-[gd_scene load_steps=226 format=3 uid="uid://bwl8bs68b1icd"]
+[gd_scene load_steps=241 format=3 uid="uid://bwl8bs68b1icd"]
 
 [ext_resource type="Texture2D" uid="uid://deg3ic8wp0g2k" path="res://art/background/frame_01.png" id="1_b6w0k"]
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_lg7iv"]
@@ -132,13 +132,9 @@
 [ext_resource type="Texture2D" uid="uid://cq0yfxx3gwdgh" path="res://art/panels/panel_eyeswindow_view/face_emotions/tears_blink.png" id="48_pj6ly"]
 [ext_resource type="Texture2D" uid="uid://0irjpkg7pf7g" path="res://art/panels/type_active/frame_01.png" id="49_625kn"]
 [ext_resource type="Texture2D" uid="uid://c6onx31f0nvk3" path="res://art/panels/panel_eyeswindow_view/face_emotions/tears_door.png" id="49_bx0o2"]
-[ext_resource type="Texture2D" uid="uid://x47r28a44vpx" path="res://art/title/frame_01.png" id="49_puoa5"]
-[ext_resource type="Texture2D" uid="uid://bw4msgs6tqp1w" path="res://art/title/frame_02.png" id="50_ewh30"]
 [ext_resource type="Texture2D" uid="uid://6frqno2kvja1" path="res://art/panels/type_active/frame_02.png" id="50_oewyf"]
 [ext_resource type="Texture2D" uid="uid://croe70xy76ht0" path="res://art/panels/panel_table_view/only_phone.png" id="50_q0gem"]
-[ext_resource type="Texture2D" uid="uid://cda1odraeseap" path="res://art/title/frame_03.png" id="51_661tf"]
 [ext_resource type="Texture2D" uid="uid://ly043t7bvufa" path="res://art/panels/type_active/frame_03.png" id="51_lf0i8"]
-[ext_resource type="Texture2D" uid="uid://cwg58uokmcvqv" path="res://art/title/frame_04.png" id="52_n2irk"]
 [ext_resource type="Texture2D" uid="uid://opqxy4jqvwv6" path="res://art/panels/type_active/frame_04.png" id="52_xdsr4"]
 [ext_resource type="FontFile" uid="uid://bnpti8x5unrw1" path="res://fonts/Amiatic/AmaticSC-Regular.ttf" id="53_cnuko"]
 [ext_resource type="Texture2D" uid="uid://cunsda11bsbyf" path="res://art/panels/type_active/frame_05.png" id="53_ul3jm"]
@@ -170,6 +166,10 @@
 [ext_resource type="Texture2D" uid="uid://c2lcdtbw74ltf" path="res://art/panels/panel_clock_view/221.png" id="85_x4l61"]
 [ext_resource type="Texture2D" uid="uid://b0e454gtsrku2" path="res://art/panels/panel_clock_view/400.png" id="86_pjbxj"]
 [ext_resource type="Texture2D" uid="uid://bxjfqopovicwi" path="res://art/panels/panel_clock_view/1000.png" id="87_21f0t"]
+[ext_resource type="Texture2D" uid="uid://u1diqmvnjyou" path="res://art/title/blank_title/frame_01.png" id="166_p213b"]
+[ext_resource type="Texture2D" uid="uid://c1lfm5de2j1bu" path="res://art/title/blank_title/frame_02.png" id="167_6gd12"]
+[ext_resource type="Texture2D" uid="uid://g6y4arlq4464" path="res://art/title/blank_title/frame_03.png" id="168_p6f78"]
+[ext_resource type="Texture2D" uid="uid://bouy5ljov0awi" path="res://art/title/blank_title/frame_04.png" id="169_qg74r"]
 [ext_resource type="Texture2D" uid="uid://dqbcx0ph5g1yk" path="res://art/vinemoss/VINE MOSS (2048 x 2048 px) (1).png" id="171_x7cfh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kmyi1"]
@@ -1104,16 +1104,16 @@ base_font = ExtResource("45_w4jxd")
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("49_puoa5")
+"texture": ExtResource("166_p213b")
 }, {
 "duration": 1.0,
-"texture": ExtResource("50_ewh30")
+"texture": ExtResource("167_6gd12")
 }, {
 "duration": 1.0,
-"texture": ExtResource("51_661tf")
+"texture": ExtResource("168_p6f78")
 }, {
 "duration": 1.0,
-"texture": ExtResource("52_n2irk")
+"texture": ExtResource("169_qg74r")
 }],
 "loop": true,
 "name": &"default",
@@ -1123,19 +1123,69 @@ animations = [{
 [sub_resource type="FontVariation" id="FontVariation_it83u"]
 base_font = ExtResource("53_cnuko")
 
+[sub_resource type="FontVariation" id="FontVariation_avmy5"]
+base_font = ExtResource("37_3442n")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_em32j"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kheyr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_ylcth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_6frir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_bhjbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_jhbby")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="FontVariation" id="FontVariation_5b4np"]
+base_font = ExtResource("37_3442n")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iuruk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ubgo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o5x85"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jxhug"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cgbyr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w51hj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fdise"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0k4e5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6amjf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jskua"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_585jd"]
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_lg7iv")
 resource = ExtResource("2_5nd4n")
 title = "~ s000"
 
-[node name="Background" type="AnimatedSprite2D" parent="."]
+[node name="Background" type="AnimatedSprite2D" parent="." groups=["anim"]]
 sprite_frames = SubResource("SpriteFrames_kmyi1")
 autoplay = "default"
 
 [node name="scriptManager" type="Node2D" parent="."]
 script = ExtResource("3_f8mr0")
 
-[node name="panelMain" type="AnimatedSprite2D" parent="."]
+[node name="panelMain" type="AnimatedSprite2D" parent="." groups=["anim"]]
 sprite_frames = SubResource("SpriteFrames_4dsnc")
 autoplay = "default"
 frame_progress = 0.903015
@@ -1158,7 +1208,7 @@ sprite_frames = SubResource("SpriteFrames_5udiq")
 visible = false
 sprite_frames = SubResource("SpriteFrames_5udiq")
 
-[node name="panelDoor" type="AnimatedSprite2D" parent="."]
+[node name="panelDoor" type="AnimatedSprite2D" parent="." groups=["anim"]]
 position = Vector2(2.08165e-12, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_stsko")
 autoplay = "default"
@@ -1180,7 +1230,7 @@ visible = false
 sprite_frames = SubResource("SpriteFrames_bf0vj")
 autoplay = "default"
 
-[node name="panelTable" type="AnimatedSprite2D" parent="."]
+[node name="panelTable" type="AnimatedSprite2D" parent="." groups=["anim"]]
 position = Vector2(2.08165e-12, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_kwmoe")
 autoplay = "default"
@@ -1218,7 +1268,7 @@ visible = false
 sprite_frames = SubResource("SpriteFrames_5tyik")
 autoplay = "default"
 
-[node name="panelClock" type="AnimatedSprite2D" parent="."]
+[node name="panelClock" type="AnimatedSprite2D" parent="." groups=["anim"]]
 position = Vector2(2.08165e-12, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_nra7u")
 autoplay = "default"
@@ -1263,7 +1313,7 @@ frame_progress = 0.848787
 visible = false
 sprite_frames = SubResource("SpriteFrames_n3cds")
 
-[node name="panelComputer" type="AnimatedSprite2D" parent="."]
+[node name="panelComputer" type="AnimatedSprite2D" parent="." groups=["anim"]]
 position = Vector2(2.08165e-12, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_2j0rf")
 autoplay = "default"
@@ -1280,7 +1330,7 @@ visible = false
 sprite_frames = SubResource("SpriteFrames_8khia")
 autoplay = "default"
 
-[node name="panelEyesWin" type="AnimatedSprite2D" parent="."]
+[node name="panelEyesWin" type="AnimatedSprite2D" parent="." groups=["anim"]]
 position = Vector2(2.08165e-12, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_2r0kp")
 autoplay = "default"
@@ -1368,7 +1418,7 @@ visible = false
 sprite_frames = SubResource("SpriteFrames_4ilfw")
 autoplay = "default"
 
-[node name="panelInternal" type="AnimatedSprite2D" parent="."]
+[node name="panelInternal" type="AnimatedSprite2D" parent="." groups=["anim"]]
 position = Vector2(2.08165e-12, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_cqasx")
 autoplay = "default"
@@ -1390,7 +1440,7 @@ theme_override_fonts/normal_font = SubResource("FontVariation_hex5p")
 theme_override_font_sizes/normal_font_size = 26
 fit_content = true
 
-[node name="panelStranger" type="AnimatedSprite2D" parent="."]
+[node name="panelStranger" type="AnimatedSprite2D" parent="." groups=["anim"]]
 position = Vector2(2.08165e-12, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_l5i1w")
 autoplay = "default"
@@ -1401,7 +1451,7 @@ off_camera_pos = Vector2(2.08165e-12, 721)
 [node name="blank" type="AnimatedSprite2D" parent="panelStranger"]
 sprite_frames = SubResource("SpriteFrames_fk6wi")
 
-[node name="panelTexts" type="AnimatedSprite2D" parent="."]
+[node name="panelTexts" type="AnimatedSprite2D" parent="." groups=["anim"]]
 position = Vector2(2.08165e-12, 2.08165e-12)
 sprite_frames = SubResource("SpriteFrames_on6h4")
 autoplay = "default"
@@ -1463,3 +1513,42 @@ texture_filter = 1
 position = Vector2(347, 85)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("171_x7cfh")
+
+[node name="exit" type="Button" parent="."]
+visible = false
+offset_left = 501.0
+offset_top = -321.0
+offset_right = 630.0
+offset_bottom = -163.0
+theme_override_fonts/font = SubResource("FontVariation_avmy5")
+theme_override_font_sizes/font_size = 101
+theme_override_styles/normal = SubResource("StyleBoxEmpty_em32j")
+text = "EXIT"
+
+[node name="panelInternal" type="AnimatedSprite2D" parent="exit" groups=["anim"]]
+position = Vector2(-383, 260)
+scale = Vector2(0.81, 0.81)
+sprite_frames = SubResource("SpriteFrames_kheyr")
+autoplay = "default"
+
+[node name="CheckButton" type="CheckButton" parent="."]
+offset_left = -641.0
+offset_top = 314.0
+offset_right = -593.0
+offset_bottom = 365.0
+theme_override_fonts/font = SubResource("FontVariation_5b4np")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/focus = SubResource("StyleBoxEmpty_iuruk")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_3ubgo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_o5x85")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_jxhug")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_cgbyr")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_w51hj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fdise")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_0k4e5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6amjf")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_jskua")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_585jd")
+
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]

@@ -1,36 +1,20 @@
-[gd_scene load_steps=15 format=3 uid="uid://otnu3nb8wm46"]
+[gd_scene load_steps=34 format=3 uid="uid://otnu3nb8wm46"]
 
 [ext_resource type="Script" path="res://scripts/titleScript.gd" id="1_5nydr"]
 [ext_resource type="Texture2D" uid="uid://deg3ic8wp0g2k" path="res://art/background/frame_01.png" id="1_686cj"]
-[ext_resource type="Texture2D" uid="uid://x47r28a44vpx" path="res://art/title/frame_01.png" id="1_gbft5"]
 [ext_resource type="Texture2D" uid="uid://c8skb27bolf8j" path="res://art/background/frame_02.png" id="2_ir862"]
-[ext_resource type="Texture2D" uid="uid://bw4msgs6tqp1w" path="res://art/title/frame_02.png" id="2_jpwno"]
+[ext_resource type="Texture2D" uid="uid://u1diqmvnjyou" path="res://art/title/blank_title/frame_01.png" id="2_k0yka"]
 [ext_resource type="Texture2D" uid="uid://dm0t5shkf5tcd" path="res://art/background/frame_03.png" id="3_4g5bc"]
-[ext_resource type="Texture2D" uid="uid://cda1odraeseap" path="res://art/title/frame_03.png" id="3_rkxuu"]
+[ext_resource type="Texture2D" uid="uid://c1lfm5de2j1bu" path="res://art/title/blank_title/frame_02.png" id="3_eit7h"]
+[ext_resource type="Texture2D" uid="uid://g6y4arlq4464" path="res://art/title/blank_title/frame_03.png" id="4_4kec2"]
 [ext_resource type="Texture2D" uid="uid://bsdb7p5rcb6pg" path="res://art/background/frame_04.png" id="4_dpkot"]
-[ext_resource type="Texture2D" uid="uid://cwg58uokmcvqv" path="res://art/title/frame_04.png" id="4_tkt8y"]
+[ext_resource type="Texture2D" uid="uid://bouy5ljov0awi" path="res://art/title/blank_title/frame_04.png" id="5_1m81g"]
 [ext_resource type="FontFile" uid="uid://dqhyh8esoirki" path="res://fonts/Amiatic/AmaticSC-Bold.ttf" id="10_t4w2i"]
 [ext_resource type="Texture2D" uid="uid://clyfv7jb4ajiy" path="res://art/vinemoss/b&W _1280.png" id="11_a6iqg"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_1rrkv"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_gbft5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_jpwno")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_rkxuu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_tkt8y")
-}],
-"loop": true,
-"name": &"default",
-"speed": 8.0
-}]
+[ext_resource type="Texture2D" uid="uid://dcvuufedfo1k6" path="res://art/panels/panel_internal_view/panel/frame_01.png" id="12_cs5q0"]
+[ext_resource type="Texture2D" uid="uid://c2my1l018cvi7" path="res://art/panels/panel_internal_view/panel/frame_02.png" id="13_rfp2a"]
+[ext_resource type="Texture2D" uid="uid://jqv02jl2q2ag" path="res://art/panels/panel_internal_view/panel/frame_03.png" id="14_p043l"]
+[ext_resource type="Texture2D" uid="uid://dtlhi61jvlpcn" path="res://art/panels/panel_internal_view/panel/frame_04.png" id="15_sijdt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vh3x8"]
 animations = [{
@@ -52,18 +36,89 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_1rrkv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_k0yka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_eit7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4kec2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1m81g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
 [sub_resource type="FontVariation" id="FontVariation_rvy2m"]
 base_font = ExtResource("10_t4w2i")
+
+[sub_resource type="FontVariation" id="FontVariation_je6nk"]
+base_font = ExtResource("10_t4w2i")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_crifg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5iux1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_cs5q0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rfp2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_p043l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_sijdt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="FontVariation" id="FontVariation_fm355"]
+base_font = ExtResource("10_t4w2i")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r5dks"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b066v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_03qoa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q082r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_70lqj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_333cg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_liouf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iqkrt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_78obl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yymcy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r5dls"]
 
 [node name="title" type="Node2D"]
 script = ExtResource("1_5nydr")
 
-[node name="title" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_1rrkv")
+[node name="background" type="AnimatedSprite2D" parent="." groups=["anim"]]
+sprite_frames = SubResource("SpriteFrames_vh3x8")
 autoplay = "default"
 
-[node name="background" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_vh3x8")
+[node name="title" type="AnimatedSprite2D" parent="."]
+visible = false
+sprite_frames = SubResource("SpriteFrames_1rrkv")
 autoplay = "default"
 
 [node name="countdown" type="AnimatedSprite2D" parent="."]
@@ -94,5 +149,46 @@ fit_content = true
 
 [node name="vineMoss" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
-scale = Vector2(0.64, 0.64)
+texture_filter = 1
 texture = ExtResource("11_a6iqg")
+
+[node name="play" type="Button" parent="."]
+visible = false
+offset_left = -81.0
+offset_top = 198.0
+offset_right = 72.0
+offset_bottom = 346.0
+size_flags_vertical = 8
+theme_override_fonts/font = SubResource("FontVariation_je6nk")
+theme_override_font_sizes/font_size = 101
+theme_override_styles/normal = SubResource("StyleBoxEmpty_crifg")
+text = "PLAY"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="play" groups=["anim"]]
+position = Vector2(-474, 248)
+scale = Vector2(1, 0.78)
+sprite_frames = SubResource("SpriteFrames_5iux1")
+autoplay = "default"
+
+[node name="CheckButton" type="CheckButton" parent="."]
+offset_left = -631.0
+offset_top = 307.0
+offset_right = -504.0
+offset_bottom = 355.0
+theme_override_fonts/font = SubResource("FontVariation_fm355")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/focus = SubResource("StyleBoxEmpty_r5dks")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_b066v")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_03qoa")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_q082r")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_70lqj")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_333cg")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_liouf")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_iqkrt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_78obl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yymcy")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_r5dls")
+text = "Static Mode"
+
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
+[connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]
